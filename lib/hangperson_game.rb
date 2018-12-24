@@ -65,11 +65,11 @@ class HangpersonGame
 	@word.each_char do |c|
 		result += '-'
 	end
-	puts result
 	#"Einstein".enum_for(:scan, /(?=in)/).map { Regexp.last_match.offset(0).first }
+	temp = @word.split("")
 	
 	@guesses.each_char do |c| 
-		@word.split("").each_with_index do |val, index| 
+		temp.each_with_index do |val, index| 
 			if c == @word[index]
 				result[index] = c
 			end
