@@ -5,6 +5,8 @@ gem 'sinatra', '>= 2.0.1'
 gem 'sinatra-flash', '0.3.0'
 
 group :development, :test do
+  gem 'autotest'
+
   gem 'cucumber', '2.0.0'
   gem 'cucumber-sinatra', '0.5.0'
   gem 'capybara', '3.1'

@@ -4,8 +4,8 @@ require './lib/hangperson_game.rb'
 
 class HangpersonApp < Sinatra::Base
 
-  enable :sessions
-  register Sinatra::Flash
+  enable :sessions # saves data until we delte
+  register Sinatra::Flash # saves data until the next request
   
   before do
     @game = session[:game] || HangpersonGame.new('')
